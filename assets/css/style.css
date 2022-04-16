@@ -1,0 +1,187 @@
+/* RESET CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Begin Header */
+#header {
+    background-color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100px;
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    /* justify-content: space-evenly; */
+}
+#shop-logo {
+    flex: 2;
+}
+.sub-header {
+    flex: 1;
+    height: 100%;
+}
+.sub-header-icon:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+.sub-header-content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.sub-header-icon img {
+    width: 50%;
+    height: 50%;
+}
+
+.sub-header.contact:hover, .sub-header.cart:hover {
+    color: white;
+    cursor: pointer;
+}
+.sub-header.contact {
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 40px;
+    transform: translateX(120px)
+}
+.sub-header.cart {
+    color: rgba(255, 255, 255, 0.5);
+    padding-top: 40px;
+    transform: translateX(75px)
+}
+.sub-header-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub-header-text {
+    margin-top: 5%;
+    color: white;
+}
+#shop-logo {
+    display: flex;
+    align-items: center;
+}
+#shop-logo img {
+    height: 100%;
+    background-color: black;
+    transform: translateX(50px);
+}
+/* End Header */
+/* Begin body */
+#body {
+    height: 1000px;
+    transform: translateY(100px)
+}
+
+/* Begin Tabs UI */
+
+.tabs {
+    display: flex;
+    position: relative;
+}
+.tab-item img {
+    transform: translateY(50%);
+    width: 50px;
+}
+.tab-item {
+    height: 100px;
+    width: calc(100% / 7);
+    text-align: center;
+}
+.tabs .line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 6px;
+    border-radius: 15px;
+    background-color: #aaa;
+    transition: all 0.2s ease;
+  }
+  .tab-item:hover {
+    opacity: 1;
+    background-color: rgba(103, 91, 95, 0.1);
+    border-color: rgba(194, 53, 100, 0.1);
+    cursor: pointer;
+  }
+  .tab-pane {
+    color: #333;
+    display: none;
+  }
+  .tab-pane.active {
+    display: block;
+  }
+.tab-pane-header {
+    text-align: center;
+}
+
+.tab-item.active {
+    opacity: 1;
+ }
+.tab-item .asus {
+    width: 100px;
+    transform: translateY(39%);
+  }
+.tab-item .acer {
+    width: 100px;
+}
+.tab-item .lenovo, .tab-item .samsung {
+    width: 100px;
+    transform: translateY(100%);
+}
+.tab-item .apple {
+    transform: translateY(40%);
+}
+.tab-content {
+    line-height: 1.6;
+}
+.tab-content h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+.tab-content p {
+    color: #5a5a5a
+}
+.product {
+    display: inline-block;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 50px 50px;
+}
+.product-image {
+    width: 319px;
+}
+.product-container {
+    overflow: auto;
+    white-space: nowrap;
+}
+.tab-pane-header img {
+    width: 100%;
+}
+.intro img {
+    width: 100%;
+    margin-top: 100px;
+}
+/* End Tabs UI */
+
+/* End Body */
+
+/* Begin Footer */
+
+/* End Footer */
