@@ -5,6 +5,9 @@
     box-sizing: border-box;
     border: 0;
 }
+a {
+    text-decoration: none;
+}
 
 html {
     font-family: 'Roboto', sans-serif;
@@ -29,7 +32,7 @@ html {
     height: 100%;
 }
 .sub-header-icon:hover {
-    background-color: yellow;
+    background-color: orange;
     cursor: pointer;
 }
 .sub-header-content {
@@ -49,12 +52,14 @@ html {
     cursor: pointer;
 }
 .sub-header.contact {
-    color: rgba(255, 255, 255, 0.5);
+    color: #999;
+    font-weight: bold;
     padding-top: 40px;
     transform: translateX(120px)
 }
 .sub-header.cart {
-    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    color: #999;
     padding-top: 40px;
     transform: translateX(75px)
 }
@@ -83,6 +88,7 @@ html {
 /* End Header */
 /* Begin body */
 #body {
+    position: relative;
     height: 1000px;
     transform: translateY(100px)
 }
@@ -162,7 +168,20 @@ html {
     display: inline-block;
     text-align: center;
     border: 1px solid #ccc;
-    padding: 50px 50px;
+    font-size: 13px;
+    padding: 50px 50px 20px 50px;
+}
+.buy-btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: white;
+    background-color: orange;
+}
+.buy-btn:hover {
+     cursor: pointer;
+     background-color: #fb6e2e;
 }
 .product-image {
     width: 319px;
@@ -184,4 +203,119 @@ html {
 
 /* Begin Footer */
 
+#footer {
+    height: 240px;
+    width: 100%;
+    background-color: black;
+    margin-top: 4500px;
+    color: #999;
+    line-height: 1.6;
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.tel {
+    display: block;
+    width: 285px;
+    font-size: 20px;
+    color: #FF066A;
+    padding: 10px 10px;
+    border: 1px solid #999;
+}
+
 /* End Footer */
+
+/* Begin Buy Sector */
+.buy-sector {
+    display: none;
+    position: fixed;
+    width: 1264px;
+    height: 5299px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.buy-container {
+    position: relative;
+    width: 404px;
+    height: 434px;
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    margin-top: 125px;
+    padding: 10px 20px 30px;
+    line-height: 1.6;
+}
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.product-detail {
+    margin-top: 8px;
+}
+.order-btn {
+    display: block;
+    overflow: hidden;
+    padding: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #f79429 0%, #f7712e 100%);
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-weight: 600;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.product-price {
+    display: block;
+    width: 100%;
+    color: #F30C28;
+    border-bottom: 1px solid #999;
+    padding-bottom: 8px;
+}
+.quantity-picker {
+    border-bottom: 1px solid #999;
+    padding-bottom: 8px;
+    display: flex;
+}
+.number, .minus, .plus {
+    border: 1px solid #999;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 2.7px;
+    
+}
+.close-btn {
+    padding: 0px 16px;
+    font-size: 30px;    
+}
+.minus:hover {
+    cursor: pointer;
+}
+.plus:hover {
+    cursor: pointer;
+}
+.close-btn:hover {
+    cursor: pointer;
+}
+.quantity-picker p {
+    margin-right: 10px;
+}
+form {
+    margin: 16px 0;
+}
+#black-label {
+    margin-right: 16px;
+}
+.promotion {
+    margin-top: 16px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+/* End Buy Sector */
